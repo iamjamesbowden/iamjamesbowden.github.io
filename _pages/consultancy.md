@@ -5,6 +5,8 @@ permalink: /consultancy/
 author_profile: true
 ---
 
+## Note: The Below is GenAI-created Gobbledygook and not reflective of reality....this placeholder text will be replaced in due course.
+
 I offer specialized consultancy and training services to organizations looking to integrate AI and advanced analytics into their financial operations. My approach combines academic rigor with practical industry experience.
 
 ## Consultancy Services
