@@ -1,0 +1,6 @@
+{% assign pr = include.pr %}
+<li class="project">
+  <p class="project-title">{{ pr.title }}</p>
+  <p class="project-meta">{{ pr.funder }}. {{ pr.role }}. {{ pr.years }}.</p>
+  {% if pr.summary %}<p class="project-summary">{{ pr.summary }}</p>{% endif %}
+</li>

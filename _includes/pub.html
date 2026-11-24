@@ -1,0 +1,7 @@
+{% assign p = include.pub %}
+{% if p.doi %}{% capture link %}https://doi.org/{{ p.doi }}{% endcapture %}{% elsif p.url %}{% assign link = p.url %}{% else %}{% assign link = nil %}{% endif %}
+<li class="pub">
+  <p class="pub-title">{% if link %}<a href="{{ link }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+  {% if p.authors %}<p class="pub-authors">{{ p.authors | replace: 'Bowden, J.', '<strong>Bowden, J.</strong>' }}</p>{% endif %}
+  <p class="pub-venue">{% if include.showyear %}{{ p.year }}. {% endif %}<cite>{{ p.venue }}</cite>{% if p.details %}, {{ p.details }}{% endif %}{% if p.fulltext %} <a class="pub-free" href="{{ p.fulltext }}">Free full text</a>{% endif %}</p>
+</li>

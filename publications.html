@@ -1,0 +1,30 @@
+---
+title: Publications
+permalink: /publications/
+lede: Peer-reviewed articles, book chapters, and white papers written for industry and regulators.
+redirect_from:
+  - /publications.html
+---
+<p class="jump">Jump to:
+{% for g in site.data.publications %}<a href="#{{ g.id }}">{{ g.group }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}.
+A full record is on my <a href="{{ site.author.pure }}">Strathclyde profile</a> and <a href="{{ site.author.scholar }}">Google Scholar</a>.</p>
+
+{% for g in site.data.publications %}
+<section class="pub-group" id="{{ g.id }}">
+  <h2>{{ g.group }}</h2>
+  {% if g.intro %}<p class="group-intro">{{ g.intro }}</p>{% endif %}
+  <div class="by-year">
+  {% assign lastyear = '' %}
+  {% for p in g.items %}
+    {% capture y %}{{ p.year }}{% endcapture %}
+    {% if y != lastyear %}
+      {% unless forloop.first %}</ol></div>{% endunless %}
+      <div class="year-row"><p class="year">{{ y }}</p><ol class="pubs">
+      {% assign lastyear = y %}
+    {% endif %}
+    {% include pub.html pub=p %}
+    {% if forloop.last %}</ol></div>{% endif %}
+  {% endfor %}
+  </div>
+</section>
+{% endfor %}

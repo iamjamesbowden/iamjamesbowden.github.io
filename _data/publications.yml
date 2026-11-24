@@ -1,0 +1,217 @@
+# Publications, grouped by type. Newest first within each group.
+#
+# To add an entry, copy an existing one and edit it. Fields:
+#   title    - required
+#   authors  - required. "Bowden, J." is picked out in bold automatically.
+#   year     - required
+#   venue    - journal, book or series (shown in italics)
+#   details  - volume, issue, pages or article number
+#   doi      - just the DOI, without https://doi.org/
+#   url      - a link to use when there is no DOI
+#   fulltext - link to a free copy (e.g. Strathprints)
+#   featured - true to show it on the home page
+
+- group: Peer-reviewed journal articles
+  id: articles
+  items:
+    - title: "Who shares? Credit quality and risk aversion effects on open banking adoption behaviours and intentions"
+      authors: "Tetteh, G. K., Bowden, J. and Cummins, M."
+      year: 2026
+      venue: European Journal of Finance
+      details: "32(9), 1170–1195"
+      doi: 10.1080/1351847X.2026.2663938
+      fulltext: https://strathprints.strath.ac.uk/96069/
+      featured: true
+
+    - title: "Recognition and disclosure of intangibles under International Financial Reporting Standards"
+      authors: "Ibrahim, S., Bowden, J., Elmarzouky, M. and Al-Kilani, M."
+      year: 2025
+      venue: Abacus
+      details: "61(4), 857–896"
+      doi: 10.1111/abac.70015
+      featured: true
+
+    - title: "A multimodal sentiment classifier for financial decision making"
+      authors: "Todd, A., Bowden, J., Cummins, M. and Su, Y."
+      year: 2025
+      venue: International Review of Financial Analysis
+      details: "105, 104322"
+      doi: 10.1016/j.irfa.2025.104322
+      featured: true
+
+    - title: "A taxonomy of earth observation data for sustainable finance"
+      authors: "Rapach, S., Riccardi, A., Liu, B. and Bowden, J."
+      year: 2024
+      venue: Journal of Climate Finance
+      details: "6, 100029"
+      url: https://strathprints.strath.ac.uk/87684/
+      fulltext: https://strathprints.strath.ac.uk/87684/
+      featured: true
+
+    - title: "Text-based sentiment analysis in finance: synthesising the existing literature and exploring future directions"
+      authors: "Todd, A., Bowden, J. and Moshfeghi, Y."
+      year: 2024
+      venue: Intelligent Systems in Accounting, Finance and Management
+      details: "31(1), e1549"
+      url: https://pureportal.strath.ac.uk/en/publications/text-based-sentiment-analysis-in-finance-synthesising-the-existin/
+
+    - title: "Price discovery between Bitcoin spot markets and exchange traded products"
+      authors: "Gemayel, R., Franus, T. and Bowden, J."
+      year: 2023
+      venue: Economics Letters
+      details: "228, 111152"
+      doi: 10.1016/j.econlet.2023.111152
+
+    - title: "Sentiment and trading decisions in an ambiguous environment: a study on cryptocurrency traders"
+      authors: "Bowden, J. and Gemayel, R."
+      year: 2022
+      venue: Journal of International Financial Markets, Institutions and Money
+      details: "80, 101622"
+      doi: 10.1016/j.intfin.2022.101622
+      fulltext: https://strathprints.strath.ac.uk/82014/
+
+    - title: "Economy through a lens: distortions of policy coverage in UK national newspapers"
+      authors: "Bowden, J., Kwiatkowski, A. and Rambaccussing, D."
+      year: 2019
+      venue: Journal of Comparative Economics
+      details: "47(4), 881–906"
+      doi: 10.1016/j.jce.2019.07.002
+
+    - title: "Rumours built on quicksand: evidence on the nature and impact of message board postings in modern equity markets"
+      authors: "Bowden, J., Burton, B. and Power, D."
+      year: 2018
+      venue: European Journal of Finance
+      details: "24(7–8), 544–564"
+      doi: 10.1080/1351847X.2017.1288647
+      fulltext: https://strathprints.strath.ac.uk/67688/
+
+- group: Book chapters
+  id: chapters
+  items:
+    - title: "Illuminating craft brewers' experiences of dealing with Covid-19 and making fresh sense of what Covid-19 can do to/for craft beer: an intègraphic approach"
+      authors: "Clarke, D., Bowden, J. and Dinnie, K."
+      year: 2021
+      venue: "Researching Craft Beer: Understanding Production, Community and Culture in an Evolving Sector"
+      details: "Clarke, D., Ellis, V., Patrick-Thomson, H. and Weir, D. (eds). Emerald, 49–72"
+
+    - title: "A taxonomy of FinTech innovation"
+      authors: "Bowden, J., King, T., Koutmos, D., Rodrigues Loncan, T. and Lopes, F. S. S."
+      year: 2021
+      venue: Disruptive Technology in Banking and Finance
+      details: "King, T., Lopes, F. S. S., Srivastav, A. and Williams, J. (eds). Palgrave Macmillan, 47–91"
+      url: https://pureportal.strath.ac.uk/en/publications/a-taxonomy-of-fintech-innovation
+
+- group: White papers and reports
+  id: reports
+  intro: >-
+    Most of these were written for the Financial Regulation Innovation Lab (FRIL)
+    White Paper Series, which shares applied research with industry and regulators.
+  items:
+    - title: "Agentic AI for scaling targeted support: a governance framework for the FCA advice–guidance boundary"
+      authors: "Cummins, M., Bowden, J., Zhang, H. and Jain, K."
+      year: 2026
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      doi: 10.17868/strath.00095854
+
+    - title: "Multimodal AI for scaling targeted support: navigating the FCA advice–guidance boundary"
+      authors: "Zhang, H., Bowden, J. and Cummins, M."
+      year: 2026
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      doi: 10.17868/strath.00095463
+
+    - title: "From crisis to prosperity: AI and open finance for holistic financial health and smart future planning"
+      authors: "Bukovski, K., Jain, K., Cummins, M., Bowden, J., Tetteh, G. K. and Khang, Z."
+      year: 2025
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      doi: 10.17868/strath.00094718
+
+    - title: "Supply chain intelligence: actionable risk assessment of Brazilian commodity supply chains using geospatial data"
+      authors: "Owens, S., Bowden, J. and Cummins, M."
+      year: 2025
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      doi: 10.17868/strath.00094187
+
+    - title: "Generative AI for simplified ESG reporting in financial services"
+      authors: "Zhang, H., Bowden, J. and Cummins, M."
+      year: 2025
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      doi: 10.17868/strath.00089574
+
+    - title: "Large language model application for regulatory horizon scanning: case study on anti-greenwashing regulations"
+      authors: "Zhang, H., Dao, D., Bowden, J. and Cummins, M."
+      year: 2025
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      url: https://www.fintechscotland.com/large-language-model-application-for-regulatory-horizon-scanning-case-study-on-esg-greenwashing-regulations
+
+    - title: "Fairness and discrimination in lending decisions: multiple protected characteristics analysis"
+      authors: "Jain, K., Bowden, J. and Cummins, M."
+      year: 2024
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      url: https://strathprints.strath.ac.uk/91083/
+
+    - title: "Open finance and carbon neutral banking: leveraging financial transaction data for consumers' carbon footprint measurement"
+      authors: "Bowden, J., Cummins, M. and Tetteh, G."
+      year: 2024
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      url: https://strathprints.strath.ac.uk/91082/
+
+    - title: "ESG greenwashing and applications of AI for measurement"
+      authors: "Dao, D., Chu, N. A., Bowden, J. and Cummins, M."
+      year: 2024
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      doi: 10.17868/strath.00089719
+
+    - title: "Promoting fairness and exploring algorithmic discrimination in financial decision making through explainable artificial intelligence"
+      authors: "Jain, K., Bowden, J. and Cummins, M."
+      year: 2024
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      url: https://strathprints.strath.ac.uk/89720/
+
+    - title: "Explainable AI for financial risk management"
+      authors: "Bowden, J., Cummins, M., Dao, D. and Jain, K."
+      year: 2024
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      url: https://strathprints.strath.ac.uk/89573/
+
+    - title: "Simplifying compliance through explainable intelligent automation"
+      authors: "Bowden, J., Cummins, M., Dao, D. and Jain, K."
+      year: 2024
+      venue: FRIL White Paper Series
+      details: University of Strathclyde
+      url: https://strathprints.strath.ac.uk/89572/
+
+- group: Commentary and media
+  id: media
+  intro: >-
+    I write and comment on financial markets and fintech for a general audience.
+    More of my pieces are on my <a href="https://theconversation.com/profiles/james-bowden-1202460">profile at The Conversation</a>.
+  items:
+    - title: "NFTs are much bigger than an art fad: here's how they could change the world"
+      year: 2021
+      venue: The Conversation UK
+      url: https://theconversation.com/profiles/james-bowden-1202460
+    - title: "Digital art and the NFT revolution"
+      year: 2021
+      venue: "France 24, Perspective (TV interview)"
+    - title: "Amsterdam ousts London as Europe's top share hub, taking trading back to where it all began"
+      year: 2021
+      venue: The Conversation UK
+      url: https://theconversation.com/profiles/james-bowden-1202460
+    - title: "GameStop: hedge fund attacks have opened up powerful new front against Wall Street"
+      year: 2021
+      venue: The Conversation UK
+      url: https://theconversation.com/profiles/james-bowden-1202460
+    - title: "Why is Scotland the perfect place for fintech to thrive?"
+      year: 2020
+      venue: "BBC StoryWorks for Innovate Finance, Innovation in Finance series (video)"
