@@ -1,0 +1,63 @@
+---
+title: Research
+permalink: /research/
+lede: I work on unstructured data in finance, and on how AI can be used responsibly in financial services.
+---
+<div class="prose">
+  <p>Much of the information that moves markets never appears in a set of accounts. It sits in what managers say on earnings calls and how they say it, in what investors write to each other online, in the wording of regulation, and increasingly in what satellites can see. My research builds methods to measure these signals and tests what they tell us about firms, investors and markets.</p>
+  <p>Since 2023 a large share of this work has been applied, through the <a href="https://www.strath.ac.uk/business/accountingfinance/financialregulationinnovationlab/">Financial Regulation Innovation Lab</a> (FRIL), led by FinTech Scotland, the University of Strathclyde and the University of Glasgow. There I co-ordinate research by Hao Zhang, Kushagra Jain and Steve Owens, which feeds into the <a href="{{ '/publications/#reports' | relative_url }}">FRIL white papers</a>.</p>
+</div>
+
+<section class="band themes-detail">
+  <h2>Themes</h2>
+  <div class="theme-grid">
+    <article>
+      <h3>Financial text and voice</h3>
+      <p>My PhD used message board postings to study trading in small UK stocks, and text has been at the centre of my work since. Current projects combine transcripts with the audio of earnings calls, so that pitch, tone and hesitancy can be measured alongside the words. This work is now also being <a href="{{ '/knowledge-exchange/#commercialisation' | relative_url }}">developed for commercial use</a>.</p>
+      <p class="see">See: Todd et al. (2025) in <cite>International Review of Financial Analysis</cite>; Todd, Bowden and Moshfeghi (2024).</p>
+    </article>
+    <article>
+      <h3>Earth observation and spatial finance</h3>
+      <p>With colleagues in aerospace engineering I study how satellite data can verify corporate environmental claims. One FRIL study tracked seven years of nitrogen dioxide readings over more than 200 platforms in UK North Sea waters. Another used geospatial data to assess risk in Brazilian commodity supply chains.</p>
+      <p class="see">See: Rapach et al. (2024) in <cite>Journal of Climate Finance</cite>; Owens, Bowden and Cummins (2025).</p>
+    </article>
+    <article>
+      <h3>Responsible AI in financial services</h3>
+      <p>Explainable AI for risk management and compliance, fairness and discrimination in lending models, generative AI for ESG reporting, and governance of agentic AI at the FCA's advice–guidance boundary.</p>
+      <p class="see">See: the <a href="{{ '/publications/#reports' | relative_url }}">FRIL white papers</a>.</p>
+    </article>
+    <article>
+      <h3>Fintech adoption and open finance</h3>
+      <p>Why some consumers share their financial data through open banking and others do not, and what holds back digital banking in sub-Saharan Africa. Risk aversion, more than credit quality, turns out to be the main barrier to open banking adoption.</p>
+      <p class="see">See: Tetteh, Bowden and Cummins (2026) in <cite>European Journal of Finance</cite>.</p>
+    </article>
+    <article>
+      <h3>Markets and corporate reporting</h3>
+      <p>Sentiment and trading on cryptocurrency exchanges, price discovery between Bitcoin spot markets and exchange traded products, media coverage of economic policy, and how firms recognise and disclose intangible assets under IFRS. Related work with the same team on unrecognised goodwill was funded by an IAAER/KPMG research grant and presented to IASB members and KPMG.</p>
+      <p class="see">See: Ibrahim et al. (2025) in <cite>Abacus</cite>; Bowden and Gemayel (2022).</p>
+    </article>
+  </div>
+</section>
+
+<section class="band" id="projects">
+  <h2>Funded projects</h2>
+  {% assign current = site.data.projects | where: 'status', 'current' %}
+  {% assign done = site.data.projects | where: 'status', 'completed' %}
+  <h3 class="sub">Current</h3>
+  <ul class="projects">
+    {% for pr in current %}{% include project.html pr=pr %}{% endfor %}
+  </ul>
+  <h3 class="sub">Completed</h3>
+  <ul class="projects">
+    {% for pr in done %}{% include project.html pr=pr %}{% endfor %}
+  </ul>
+</section>
+
+<section class="band" id="talks">
+  <h2>Talks and events</h2>
+  <ul class="talks">
+    {% for t in site.data.talks %}
+    <li><span class="talk-year">{{ t.year }}</span><span class="talk-body"><span class="talk-title">{{ t.title }}</span> <span class="talk-event">{{ t.event }}</span></span></li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,19 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}">James Bowden</a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        {% for item in site.data.navigation %}
+          {% assign current = false %}
+          {% if item.url == '/' %}
+            {% if page.url == '/' or page.url == '/index.html' %}{% assign current = true %}{% endif %}
+          {% elsif page.url contains item.url %}
+            {% assign current = true %}
+          {% endif %}
+          <li><a href="{{ item.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

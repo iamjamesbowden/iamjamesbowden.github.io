@@ -1,0 +1,23 @@
+---
+title: Blog
+permalink: /blog/
+lede: Notes on research, teaching and what is happening in fintech.
+redirect_from:
+  - /year-archive/
+---
+{% if site.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>
+    <div>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.description %}<p>{{ post.description }}</p>{% else %}<p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No posts yet.</p>
+{% endif %}
+<p class="feed-note">Follow new posts with the <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>.</p>

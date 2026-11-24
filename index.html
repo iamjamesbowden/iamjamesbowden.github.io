@@ -1,0 +1,94 @@
+---
+layout: default
+title: James Bowden
+body_class: home
+redirect_from:
+  - /about/
+  - /cv/
+---
+<section class="wrap hero">
+  <div class="hero-text">
+    <h1>James Bowden</h1>
+    <p class="role">Senior Lecturer in Financial Technology, Strathclyde Business School</p>
+    <p class="intro">I use text, voice and satellite data to answer questions in finance. Most of my work asks what companies, investors and markets reveal beyond the numbers, whether that is in an earnings call, a regulatory filing, an online forum or an image of an oil platform taken from space.</p>
+    <p>I direct the MSc Financial Technology at the University of Strathclyde in Glasgow, have three projects in the University's commercialisation process, and work with industry and regulators through the Financial Regulation Innovation Lab.</p>
+    {% include contact-links.html %}
+  </div>
+  <figure class="hero-photo">
+    <img src="{{ site.author.photo | relative_url }}" alt="James Bowden" width="800" height="800">
+  </figure>
+</section>
+
+<div class="wrap wave-wrap">{% include wave.svg %}</div>
+
+<section class="wrap band">
+  <h2>What I work on</h2>
+  <dl class="themes">
+    <div>
+      <dt>Financial text and voice</dt>
+      <dd>Sentiment analysis and language models applied to annual reports, earnings calls, news and social media, and multimodal models that add the audio of what managers say to the transcript.</dd>
+    </div>
+    <div>
+      <dt>Earth observation and spatial finance</dt>
+      <dd>Using satellite data to check what firms claim about their environmental performance, from North Sea platforms to Brazilian commodity supply chains.</dd>
+    </div>
+    <div>
+      <dt>Responsible AI in financial services</dt>
+      <dd>Explainable AI, fairness in lending decisions, and governance of generative and agentic AI, including recent work on the FCA's advice–guidance boundary.</dd>
+    </div>
+    <div>
+      <dt>Fintech adoption and open finance</dt>
+      <dd>Who shares their data through open banking and why, and what limits digital banking adoption in sub-Saharan Africa.</dd>
+    </div>
+    <div>
+      <dt>Markets and corporate reporting</dt>
+      <dd>Online investor communities, cryptocurrency markets, and the recognition and disclosure of intangible assets under IFRS.</dd>
+    </div>
+  </dl>
+  <p class="more"><a href="{{ '/research/' | relative_url }}">Research projects and talks</a></p>
+</section>
+
+<section class="wrap band split">
+  <div>
+    <h2>Recent publications</h2>
+    <ol class="pubs compact">
+      {% assign articles = site.data.publications | where: 'id', 'articles' | first %}
+      {% for p in articles.items %}{% if p.featured %}
+        {% include pub.html pub=p showyear=true %}
+      {% endif %}{% endfor %}
+    </ol>
+    <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications and white papers</a></p>
+  </div>
+  <div>
+    <h2>From the blog</h2>
+    {% if site.posts.size > 0 %}
+    <ul class="post-list compact">
+      {% for post in site.posts limit: 3 %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="more"><a href="{{ '/blog/' | relative_url }}">All posts</a></p>
+    {% else %}
+    <p>No posts yet.</p>
+    {% endif %}
+
+    <h2 class="roles-head">Current roles</h2>
+    <ul class="roles">
+      <li>Programme Director, MSc Financial Technology</li>
+      <li>Co-investigator, Financial Regulation Innovation Lab</li>
+      <li>Departmental Director of Knowledge Exchange, Accounting and Finance</li>
+      <li>Commercialisation Task Force Lead, Strathclyde Business School</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap band background">
+  <h2>Background</h2>
+  <div class="prose">
+    <p>Before academia I spent four years as a Senior Stock Research Analyst and Index Supervisor at Russell Investments (now FTSE Russell) in Edinburgh, after an internship at Merrill Lynch and a Knowledge Transfer Partnership between Bangor University and a fintech start-up. My PhD in Accounting and Finance at the University of Dundee looked at how postings on online message boards relate to trading in shares listed on London's AIM market. I joined Strathclyde in 2019.</p>
+    <p>I hold an MSc in Investment Analysis from the University of Stirling, a BA (Hons) in International Business from Nottingham Trent University and a PG Certificate in Learning and Teaching in Higher Education. I review for journals including the <cite>European Journal of Finance</cite>, <cite>Business Strategy and the Environment</cite> and <cite>Intelligent Systems in Accounting, Finance and Management</cite>, and I am accepting PhD students.</p>
+  </div>
+</section>
