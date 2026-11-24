@@ -60,7 +60,15 @@ redirect_from:
     <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications and white papers</a></p>
   </div>
   <div>
-    <h2>From the blog</h2>
+    <h2>Current roles</h2>
+    <ul class="roles">
+      <li>Programme Director, MSc Financial Technology</li>
+      <li>Co-investigator, Financial Regulation Innovation Lab</li>
+      <li>Departmental Director of Knowledge Exchange, Accounting and Finance</li>
+      <li>Commercialisation Task Force Lead, Strathclyde Business School</li>
+    </ul>
+
+    <h2 class="blog-head">From the blog</h2>
     {% if site.posts.size > 0 %}
     <ul class="post-list compact">
       {% for post in site.posts limit: 3 %}
@@ -74,14 +82,6 @@ redirect_from:
     {% else %}
     <p>No posts yet.</p>
     {% endif %}
-
-    <h2 class="roles-head">Current roles</h2>
-    <ul class="roles">
-      <li>Programme Director, MSc Financial Technology</li>
-      <li>Co-investigator, Financial Regulation Innovation Lab</li>
-      <li>Departmental Director of Knowledge Exchange, Accounting and Finance</li>
-      <li>Commercialisation Task Force Lead, Strathclyde Business School</li>
-    </ul>
   </div>
 </section>
 
